@@ -1,0 +1,103 @@
+html {
+    height: 100%;
+}
+
+body {
+    animation: coloring 30s infinite;
+    margin: 0;
+    height: 100%;
+}
+
+@keyframes coloring {
+    0% { background-color: #ee7752; }
+    25% { background-color: #e73c7e; }
+    50% { background-color: #23a6d5; }
+    75% { background-color: #23d5ab; }
+    100% { background-color: #ee7752; }
+}
+
+
+.fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+#main-image {
+    height: 250px;
+    width: 250px;
+    transition: opacity 0.3s ease-in-out;
+}
+
+
+#time-text{
+    position: absolute;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 3em;
+    color: white;
+}
+.text-name {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 10vw;
+    color: white;
+}
+
+#firstname {
+    position: absolute;
+}
+
+#lastname {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#moma {
+    position: absolute;
+    top: -6vh;
+    right: 0;
+    transform: rotate(-90deg) ;
+    transform-origin: right bottom;
+}
+
+#moma2 {
+    position: absolute;
+    bottom: 32vh;
+    /* left: 0; */
+    transform: rotate(90deg) ;
+    transform-origin: left bottom;
+}
+.text-moma {
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 6vh;
+    color: white;
+}
+
+.text {
+    display: flex;
+    align-items: left;
+    height: 100%;
+    
+}
+
+@keyframes text-coloring {
+    0% { color: #ee7752; }
+    25% { color: #e73c7e; }
+    50% { color: #23a6d5; }
+    75% { color: #23d5ab; }
+    100% { color: #ee7752; }
+}
